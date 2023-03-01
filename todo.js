@@ -25,6 +25,16 @@ const logTodos = () => {
   console.log(arrayOfTodos);
 };
 
+const filterTodos = () => {
+  let filteredTodos = arrayOfTodos.filter((todo) => {
+    console.log(todo);
+    if (todo.userId === 2) {
+      console.log(todo);
+    }
+  })
+}
+console.log(filteredTodos);
+
 const populateTodos = () => {
   const todoList = document.querySelector('#todo-list');
   for(let i = 0; i < arrayOfTodos.length; i++) {
